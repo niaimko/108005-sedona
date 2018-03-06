@@ -9,7 +9,8 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="#" alt="Логотип сайта Седона">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
+          <!-- в лекции было сказано, что можно найти лого в формате svg, но его там нет -->
         </a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -28,6 +29,7 @@
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <!-- картинка с текстом будет в фоновом режиме, не используем текст, т.к.
         нецелесообразно подключать доп. шрифты ради 2 строчек -->
+        <!-- предполагаю что будем использовать множественные фоны: картинка гор и сверху текст в виде картинки, а в CSS пропишем маску -->
       </section>
 
       <!-- преимущества города -->
@@ -43,7 +45,8 @@
             <h3>Настоящий городок</h3>
             <span>№1</span>
             <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="#" alt="Фото города">
+            <!-- для резиновой вёрстки взял фото большего размера из макета *1200.psd -->
+            <img src="img/photo-city.jpg" width="800" height="401" alt="Фото города">
             <!-- использую вложенный список чтобы добавить дополнительные преимущества -->
             <ul class="features-list-add">
               <li class="feature-item">
@@ -65,7 +68,7 @@
             <h3>Там есть мост дьявола</h3>
             <span>№2</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="#" alt="Фото моста дьявола">
+            <img src="img/photo-bridge.jpg" width="800" height="400" alt="Фото моста дьявола">
           </li>
           <li class="feature-item">
             <h3>Небольшая площадь</h3>
@@ -95,7 +98,7 @@
       <section class="maps">
         <h2 class="visually-hidden">Карта Седоны</h2>
         <p>
-          <img src="#" alt="карта Седоны">
+          <img src="img/map.jpg" width="1280" height="747" alt="карта Седоны">
         </p>
       </section>
     </main>
@@ -112,7 +115,7 @@
       <div class="footer-copyright">
         <b>Website by</b>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="#" alt="Логотип HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
