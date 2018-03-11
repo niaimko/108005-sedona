@@ -22,7 +22,59 @@
     </header>
     <!-- основное содержимое -->
     <main class="container">
-      <!-- место для формы -->
+      <!-- фильтр гостиниц -->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-pool" type="checkbox" name="pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-parking" type="checkbox" name="parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-wi-fi" type="checkbox" name="wi-fi">
+              <label for="filter-wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-hotel" type="checkbox" name="hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-motel" type="checkbox" name="motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-apartment" type="checkbox" name="apartment" checked>
+              <label for="filter-apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (р):</legend>
+          <ul>
+            <li class="filter-price">
+              <label for="filter-sum-min">От</label>
+              <input id="filter-sum-min" class="visually-hidden filter-price filter-input-text" type="text" name="min-price" placeholder="0">
+            </li>
+            <li class="filter-price">
+              <label for="filter-sum-max">До</label>
+              <input id="filter-sum-max" class="visually-hidden filter-price filter-input-text" type="text" name="max-price" placeholder="3000">
+            </li>
+          </ul>
+          <!-- предполагаю что ползунок должен быть реализован с помощью JS -->
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+      </form>
+
       <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <!-- сортировка -->
       <section class="sorting">
