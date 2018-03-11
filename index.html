@@ -10,7 +10,7 @@
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
-          <!-- в лекции было сказано, что можно найти лого в формате svg, но его там нет -->
+          <!-- оставляем лого в png -->
         </a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -92,7 +92,31 @@
         <h2>Заинтересовались?</h2>
         <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button">Поиск гостиницы в Седоне</button>
-        <!-- место для формы -->
+        <!-- форма поиска гостиницы -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <!-- дата заезда -->
+          <p class="search-item">
+            <label for="search-arrival-date">Дата заезда:</label>
+            <input class="search-icon-date" id="search-arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+          </p>
+          <!-- дата выезда -->
+          <p class="search-item">
+            <label for="search-departure-date">Дата выезда:</label>
+            <input class="search-icon-date" id="search-departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+          </p>
+          <!-- количество взрослых -->
+          <p class="search-item">
+            <label for="search-adult-amount">Взрослые:</label>
+            <input class="search-icon-amount" id="search-adult-amount" type="text" name="adult-amount" placeholder="2">
+          </p>
+          <!-- количество детей -->
+          <p class="search-item">
+            <label for="search-children-amount">Взрослые:</label>
+            <input class="search-icon-amount" id="search-children-amount" type="text" name="children-amount" placeholder="0">
+          </p>
+          <!-- кнопка отправки формы -->
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
       <!-- блок карты -->
       <section class="maps">
