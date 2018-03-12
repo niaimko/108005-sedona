@@ -16,7 +16,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -107,12 +107,12 @@
           <!-- количество взрослых -->
           <p class="search-item">
             <label for="search-adult-amount">Взрослые:</label>
-            <input class="search-icon-amount" id="search-adult-amount" type="text" name="adult-amount" placeholder="2">
+            <input class="search-icon-amount" id="search-adult-amount" type="number" min="0" name="adult-amount" placeholder="2">
           </p>
           <!-- количество детей -->
           <p class="search-item">
-            <label for="search-children-amount">Взрослые:</label>
-            <input class="search-icon-amount" id="search-children-amount" type="text" name="children-amount" placeholder="0">
+            <label for="search-children-amount">Дети:</label>
+            <input class="search-icon-amount" id="search-children-amount" type="number" min="0" name="children-amount" placeholder="0">
           </p>
           <!-- кнопка отправки формы -->
           <button class="button" type="submit">Найти</button>
