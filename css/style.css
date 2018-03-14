@@ -82,6 +82,20 @@ a {
   line-height: 26px;
 }
 
+/* убираю маркеры у списков */
+
+.features-list,
+.features-list-add {
+  list-style: none;
+}
+
+/* задаю расположение по середине */
+
+.feature-item,
+.feature-item-add {
+  text-align: center;
+}
+
 /* задаю стили для заголовков каждого преимущества */
 
 .feature-item h3 {
@@ -93,16 +107,48 @@ a {
 
 /* переопределяю стили для заголовков 1 и 2 преимуществ, цвет текста белый */
 
-.feature-item:first-child > h3,
+.feature-item:first-child h3,
 .feature-item:nth-child(2) h3 {
   color: #ffffff;
 }
 
-/* задаю фон и цвет текста для 1 и 2 преимущества */
+/* задаю фон всех нумерованных преимуществ */
 
-.features-list > .feature-item:first-child,
-.features-list .feature-item:nth-child(2) {
+.feature-item {
+  background-color: #eeeeee;
+}
+
+/* переопределяю фон и цвет текста для 1 и 2 преимущества */
+
+.feature-item:first-child,
+.feature-item:nth-child(2) {
   color: #ffffff;
 
   background-color: #81b3d2;
+}
+
+/* задаю фон для дополнительных преимуществ */
+
+.feature-item-add {
+  background-color: #ffffff;
+}
+
+/* для каждого дополнительного преимущества задаю свою фоновую картинку */
+
+.feature-item-add:first-child {
+  background-image: url("../img/icon-1.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.feature-item-add:first-child + li {
+  background-image: url("../img/icon-3.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.feature-item-add:last-child {
+  background-image: url("../img/icon-2.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
