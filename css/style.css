@@ -47,6 +47,21 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* кнопка показать */
+
+.button-open-form-inner {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.button-open-form-inner:hover,
+.button-open-form-inner:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
 /* кнопка открытия формы (коричневая) и кнопка забронировать на внутренней странице */
 
 .button-open-form,
