@@ -29,6 +29,62 @@ a {
   text-decoration: none;
 }
 
+/* задаю стиль для кнопок */
+
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* кнопка открытия формы (коричневая) и кнопка забронировать на внутренней странице */
+
+.button-open-form,
+.button-booking {
+  background-color: #766357;
+}
+
+.button-open-form:hover,
+.button-open-form:focus,
+.button-booking:hover,
+.button-booking:focus {
+  background-color: #604e43;
+}
+
+.button-open-form:active,
+.button-booking:active {
+  background-color: #503e33;
+}
+
+/* кнопка отправки формы (синяя) и кнопка подробнее на внутренней странице */
+
+.button-send-form,
+.button-more-info {
+  background-color: #81b3d2;
+}
+
+.button-send-form:hover,
+.button-send-form:focus,
+.button-more-info:hover,
+.button-more-info:focus {
+  background-color: #669ec0;
+}
+
+.button-send-form:active,
+.button-more-info:active {
+  background-color: #5496bd;
+}
+
 /* задаю стили для навигации по сайту */
 
 .main-navigation {
@@ -188,54 +244,6 @@ a {
   text-align: center;
 }
 
-/* задаю стиль для кнопок */
-
-.button {
-  font-size: 21px;
-  line-height: 26px;
-  color: #ffffff;
-
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  border: none;
-}
-
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-/* кнопка открытия формы (коричневая) */
-
-.button-open-form {
-  background-color: #766357;
-}
-
-.button-open-form:hover,
-.button-open-form:focus {
-  background-color: #604e43;
-}
-
-.button-open-form:active {
-  background-color: #503e33;
-}
-
-/* кнопка отправки формы (синяя) */
-
-.button-send-form {
-  background-color: #81b3d2;
-}
-
-.button-send-form:hover,
-.button-send-form:focus {
-  background-color: #669ec0;
-}
-
-.button-send-form:active {
-  background-color: #5496bd;
-}
-
 /* задаю стили полям ввода в форме */
 
 .search-item input {
@@ -377,6 +385,28 @@ a {
 
 .arrow-down::before {
   border-bottom-width: 0;
+}
+
+/* задаю стили блоку с гостиницами */
+
+/* фон для блока с гостиницами */
+
+.hotels-search {
+  background-color: #ffffff;
+}
+
+/* убираю маркеры у списка */
+
+.hotels-list {
+  list-style: none;
+}
+
+/* стили для заголовка */
+
+.hotel-title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 /* задаю стили для подвала */
