@@ -409,6 +409,27 @@ a {
   line-height: 26px;
 }
 
+/* задаю стили для ссылок в блоке гостиниц */
+
+.hotel-title a {
+  color: #000000;
+}
+
+.hotel-title a:hover,
+.hotel-title a:focus {
+  color: #81b3d2;
+}
+
+.hotel-title a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* задаю стили для рейтинга гостиниц */
+
+.hotel-rating {
+  background-color: #f2f2f2;
+}
+
 /* задаю стили для подвала */
 
 .main-footer {
