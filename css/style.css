@@ -152,3 +152,80 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+/* задаю фон для раздела поиска гостиниц */
+
+.appointment {
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+/* задаю стиль для заголовка */
+
+.appointment h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+
+  text-align: center;
+}
+
+/* задаю стиль для вводного текста */
+
+.appointment-info {
+  line-height: 24px;
+
+  text-align: center;
+}
+
+/* задаю стиль для кнопок */
+
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* кнопка открытия формы (коричневая) */
+
+.button-open-form {
+  background-color: #766357;
+}
+
+.button-open-form:hover,
+.button-open-form:focus {
+  background-color: #604e43;
+}
+
+.button-open-form:active {
+  background-color: #503e33;
+}
+
+/* кнопка отправки формы (синяя) */
+
+.button-send-form {
+  background-color: #81b3d2;
+}
+
+.button-send-form:hover,
+.button-send-form:focus {
+  background-color: #669ec0;
+}
+
+.button-send-form:active {
+  background-color: #5496bd;
+}
+
+
