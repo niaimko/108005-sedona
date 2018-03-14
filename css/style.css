@@ -228,4 +228,36 @@ a {
   background-color: #5496bd;
 }
 
+/* задаю стили полям ввода в форме */
+
+.search-item input {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-item input:hover {
+  background-color: #ebebeb;
+}
+
+.search-item input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+/* задаю стили надписям в форме */
+
+.search-item label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+
+  text-transform: uppercase;
+}
+
 
