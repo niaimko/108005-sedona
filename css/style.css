@@ -260,4 +260,39 @@ a {
   text-transform: uppercase;
 }
 
+/* задаю фон для карты */
 
+.maps {
+  background-color: #ffffff;
+}
+
+/* задаю стили для подвала */
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer p {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  text-align: center;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #81b3d2;
+}
+
+.footer-copyright {
+  text-align: center;
+}
