@@ -14,3 +14,47 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+/* убираю подчеркивание у всех ссылок на сайте */
+
+a {
+  text-decoration: none;
+}
+
+/* задаю стили для навигации по сайту */
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+/* убираю маркеры у списка */
+
+.site-navigation {
+  list-style: none;
+}
+
+/* задаю цвет ссылкам */
+
+/* в обычном состоянии */
+
+.site-navigation a {
+  color: #000000;
+}
+
+/* при наведении и фокусе */
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+/* при нажатии */
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
