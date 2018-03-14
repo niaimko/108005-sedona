@@ -58,3 +58,51 @@ a {
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/* добавляю фон для разделов с описанием города и его преимуществ */
+
+.features {
+  background-color: #ffffff;
+}
+
+/* добавляю стили для краткого описания города */
+
+.features-title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+/* задаю стили для заголовка преимуществ города */
+
+.features h2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* задаю стили для заголовков каждого преимущества */
+
+.feature-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+}
+
+/* переопределяю стили для заголовков 1 и 2 преимуществ, цвет текста белый */
+
+.feature-item:first-child > h3,
+.feature-item:nth-child(2) h3 {
+  color: #ffffff;
+}
+
+/* задаю фон и цвет текста для 1 и 2 преимущества */
+
+.features-list > .feature-item:first-child,
+.features-list .feature-item:nth-child(2) {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
