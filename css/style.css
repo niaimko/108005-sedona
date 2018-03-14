@@ -15,6 +15,14 @@ body {
   background-repeat: no-repeat;
 }
 
+/* размытый фон для внутренней страницы */
+
+.inner-page {
+  background-image: url("../img/background-photo-blur.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 /* убираю подчеркивание у всех ссылок на сайте */
 
 a {
@@ -264,6 +272,111 @@ a {
 
 .maps {
   background-color: #ffffff;
+}
+
+/* меняю цвет текста в форме */
+
+.filter {
+  color: #ffffff;
+}
+
+/* убираю обводку у тега fieldset */
+
+.filter fieldset {
+  border: none;
+}
+
+/* задаю параметры для тега legend */
+
+.filter legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+/* убираю маркеры у списка фильтров */
+
+.filter ul {
+  list-style: none;
+}
+
+/* задаю фон для блока сортировки */
+
+.sorting {
+  background-color: #ffffff;
+}
+
+/* задаю стили для надписи */
+
+.hotels-amount {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+/* задаю стили для заголовка */
+
+.sorting h2 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* убираю маркеры */
+
+.sorting ul {
+  list-style: none;
+}
+
+/* задаю стили для ссылок */
+
+.sorting-list a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #cacaca;
+
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list a:hover,
+.sorting-list a:focus {
+  color: #81b3d2;
+}
+
+.sorting-list a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.sorting-active a {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+/* стилизуем стрелки сортировки */
+
+.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0;
+}
+
+.arrow::before {
+  display: inline-block;
+  content: "";
+  border: 22px solid #cacaca;
+  border-right-width: 10px;
+  border-left-width: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.arrow-up::before {
+  border-top-width: 0;
+}
+
+.arrow-down::before {
+  border-bottom-width: 0;
 }
 
 /* задаю стили для подвала */

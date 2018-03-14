@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <!-- шапка седоны -->
     <header class="main-header">
       <nav class="main-navigation">
@@ -75,7 +75,7 @@
           </ul>
           <!-- предполагаю что ползунок должен быть реализован с помощью JS -->
         </fieldset>
-        <button class="button" type="submit">Показать</button>
+        <button class="button button-open-form-inner" type="submit">Показать</button>
       </form>
 
       <h1 class="visually-hidden">Гостиницы Седоны</h1>
@@ -84,13 +84,13 @@
         <span class="hotels-amount">Найдено: 3</span>
         <h2>Сортировка:</h2>
         <ul class="sorting-list">
-          <li><a href="#">По цене</a></li>
+          <li class="sorting-active"><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По рейтингу</a></li>
         </ul>
         <ul class="sorting-position">
-          <li><a href="#">up</a></li>
-          <li><a href="#">down</a></li>
+          <li><a class="arrow arrow-up" href="#">Сортировка по возрастанию</a></li>
+          <li><a class="arrow arrow-down" href="#">Сортировка по убыванию</a></li>
         </ul>
       </section>
       <!-- блок найденных гостиниц -->
