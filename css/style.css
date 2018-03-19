@@ -12,24 +12,6 @@ body {
   background-color: #e6e6e6;
 }
 
-/* фон для главной страницы */
-
-.page-intro {
-  background-color: #ffffff;
-  background-image: url("../img/background-photo.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-/* размытый фон для внутренней страницы */
-
-.filter {
-  background-color: #ffffff;
-  background-image: url("../img/background-photo-blur.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
 /* убираю подчеркивание у всех ссылок на сайте */
 
 a {
@@ -143,6 +125,15 @@ a {
 
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+/* фон для приветственной части */
+
+.page-intro {
+  background-color: #ffffff;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 /* добавляю фон для разделов с описанием города и его преимуществ */
@@ -304,10 +295,17 @@ a {
   background-color: #ffffff;
 }
 
+/* размытый фон для формы на внутренней странице */
+
 /* меняю цвет текста в форме */
 
 .filter {
   color: #ffffff;
+
+  background-color: #ffffff;
+  background-image: url("../img/background-photo-blur.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 /* убираю обводку у тега fieldset */
