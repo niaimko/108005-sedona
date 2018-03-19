@@ -12,6 +12,13 @@ body {
   background-color: #e6e6e6;
 }
 
+/* контейнер-обёртка для центровки */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* убираю подчеркивание у всех ссылок на сайте */
 
 a {
@@ -91,7 +98,13 @@ a {
 
 /* задаю стили для навигации по сайту */
 
+.main-header .container {
+  position: relative;
+}
+
 .main-navigation {
+  min-height: 56px;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -100,10 +113,38 @@ a {
   background-color: #ffffff;
 }
 
-/* убираю маркеры у списка */
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 531px; /* (1200px - 138px) / 2 = 531px */
+
+  width: 138px;
+  height: 70px;
+}
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 56px;
+
+  margin: 0;
+  padding: 0;
+
+  padding-left: 72px;
+  padding-right: 72px;
+
   list-style: none;
+}
+
+.site-navigation li {
+  width: 239px;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
 }
 
 /* задаю цвет ссылкам */
