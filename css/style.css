@@ -10,6 +10,12 @@ body {
   text-transform: uppercase;
 
   background-color: #e6e6e6;
+}
+
+/* фон для главной страницы */
+
+.page-intro {
+  background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -17,7 +23,8 @@ body {
 
 /* размытый фон для внутренней страницы */
 
-.inner-page {
+.filter {
+  background-color: #ffffff;
   background-image: url("../img/background-photo-blur.jpg");
   background-position: top center;
   background-repeat: no-repeat;
