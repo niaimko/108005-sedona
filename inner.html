@@ -10,18 +10,20 @@
   <body class="inner-page">
     <!-- шапка седоны -->
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
-          <!-- в лекции было сказано, что можно найти лого в формате svg, но его там нет -->
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="inner.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
+            <!-- в лекции было сказано, что можно найти лого в формате svg, но его там нет -->
+          </a>
+          <ul class="site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li class="site-navigation-current"><a href="inner.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- основное содержимое -->
     <main class="container">
@@ -82,12 +84,14 @@
       <!-- сортировка -->
       <section class="sorting">
         <span class="hotels-amount">Найдено: 3</span>
-        <h2>Сортировка:</h2>
-        <ul class="sorting-list">
-          <li class="sorting-active"><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По рейтингу</a></li>
-        </ul>
+        <div class="wrapper">
+          <h2>Сортировка:</h2>
+          <ul class="sorting-list">
+            <li class="sorting-active"><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+        </div>
         <ul class="sorting-position">
           <li><a class="arrow arrow-up" href="#">Сортировка по возрастанию</a></li>
           <li><a class="arrow arrow-down" href="#">Сортировка по убыванию</a></li>
@@ -95,89 +99,101 @@
       </section>
       <!-- блок найденных гостиниц -->
       <section class="hotels-search">
-        <h2 class="visually-hidden">Гостиницы</h2>
+        <!--<h2 class="visually-hidden">Гостиницы</h2>
         <!-- делаю списком перечень найденных гостиниц -->
         <ul class="hotels-list">
           <li class="hotel-item">
             <!-- размечаю отдельную строчку одной гостиницы в списке -->
             <article class="hotel-page">
-              <!-- название гостиницы -->
-              <h3 class="hotel-title"><a href="#">Amara Resort & SPA</a></h3>
-              <!-- фото гостиницы -->
-              <p class="hotel-image">
-                <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото Amara Resort & SPA">
-              </p>
-              <!-- стоимость гостиницы -->
-              <span class="hotel-cost">От 4000 р.</span>
-              <!-- тип жилья -->
-              <span class="hotel-type">Гостиница</span>
-              <!-- ссылка на страницу гостиницы -->
-              <a class="button button-more-info" href="#">Подробнее</a>
-              <!-- ссылка на бронь -->
-              <a class="button button-booking" href="#">Забронировать</a>
-              <!-- количество звёзд у гостиницы -->
-              <p class="hotel-star">
-                <img src="img/star.svg" alt="4 звезды">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-              </p>
-              <!-- рейтинг гостиницы -->
-              <span class="hotel-rating">Рейтинг: 8,5</span>
+              <div class="column-left">
+                <!-- название гостиницы -->
+                <h3 class="hotel-title"><a href="#">Amara Resort & SPA</a></h3>
+                <!-- фото гостиницы -->
+                <p class="hotel-image">
+                  <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото Amara Resort & SPA">
+                </p>
+                <!-- стоимость гостиницы -->
+                <span class="hotel-cost">От 4000 р.</span>
+                <!-- тип жилья -->
+                <span class="hotel-type">Гостиница</span>
+                <!-- ссылка на страницу гостиницы -->
+                <a class="button button-more-info" href="#">Подробнее</a>
+                <!-- ссылка на бронь -->
+                <a class="button button-booking" href="#">Забронировать</a>
+              </div>
+              <div class="column-right">
+                <!-- количество звёзд у гостиницы -->
+                <p class="hotel-star">
+                  <img src="img/star.svg" alt="4 звезды">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                </p>
+                <!-- рейтинг гостиницы -->
+                <span class="hotel-rating">Рейтинг: 8,5</span>
+              </div>
             </article>
             <!-- конец разметки отдельной гостиницы -->
           </li>
           <li class="hotel-item">
             <!-- вторая гостиница -->
             <article class="hotel-page">
-              <!-- название гостиницы -->
-              <h3 class="hotel-title"><a href="#">Desert Quail Inn</a></h3>
-              <!-- фото гостиницы -->
-              <p class="hotel-image">
-                <img src="img/hotel-2.jpg" width="135" height="90" alt="Фото Desert Quail Inn">
-              </p>
-              <!-- стоимость гостиницы -->
-              <span class="hotel-cost">От 3000 р.</span>
-              <!-- тип жилья -->
-              <span class="hotel-type">Мотель</span>
-              <!-- ссылка на страницу гостиницы -->
-              <a class="button button-more-info" href="#">Подробнее</a>
-              <!-- ссылка на бронь -->
-              <a class="button button-booking" href="#">Забронировать</a>
-              <!-- количество звёзд у гостиницы -->
-              <p class="hotel-star">
-                <img src="img/star.svg" alt="3 звезды">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-              </p>
-              <!-- рейтинг гостиницы -->
-              <span class="hotel-rating">Рейтинг: 8,9</span>
+              <div class="column-left">
+                <!-- название гостиницы -->
+                <h3 class="hotel-title"><a href="#">Desert Quail Inn</a></h3>
+                <!-- фото гостиницы -->
+                <p class="hotel-image">
+                  <img src="img/hotel-2.jpg" width="135" height="90" alt="Фото Desert Quail Inn">
+                </p>
+                <!-- стоимость гостиницы -->
+                <span class="hotel-cost">От 3000 р.</span>
+                <!-- тип жилья -->
+                <span class="hotel-type">Мотель</span>
+                <!-- ссылка на страницу гостиницы -->
+                <a class="button button-more-info" href="#">Подробнее</a>
+                <!-- ссылка на бронь -->
+                <a class="button button-booking" href="#">Забронировать</a>
+              </div>
+              <div class="column-right">
+                <!-- количество звёзд у гостиницы -->
+                <p class="hotel-star">
+                  <img src="img/star.svg" alt="3 звезды">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                </p>
+                <!-- рейтинг гостиницы -->
+                <span class="hotel-rating">Рейтинг: 8,9</span>
+              </div>
             </article>
           </li>
           <li class="hotel-item">
             <!-- третья гостиница -->
             <article class="hotel-page">
-              <!-- название гостиницы -->
-              <h3 class="hotel-title"><a href="#">Villas At Poco Diablo</a></h3>
-              <!-- фото гостиницы -->
-              <p class="hotel-image">
-                <img src="img/hotel-3.jpg" width="135" height="90" alt="Фото Villas At Poco Diablo">
-              </p>
-              <!-- стоимость гостиницы -->
-              <span class="hotel-cost">От 2000 р.</span>
-              <!-- тип жилья -->
-              <span class="hotel-type">Апартаменты</span>
-              <!-- ссылка на страницу гостиницы -->
-              <a class="button button-more-info" href="#">Подробнее</a>
-              <!-- ссылка на бронь -->
-              <a class="button button-booking" href="#">Забронировать</a>
-              <!-- количество звёзд у гостиницы -->
-              <p class="hotel-star">
-                <img src="img/star.svg" alt="2 звезды">
-                <img src="img/star.svg" alt="">
-              </p>
-              <!-- рейтинг гостиницы -->
-              <span class="hotel-rating">Рейтинг: 9,2</span>
+              <div class="column-left">
+                <!-- название гостиницы -->
+                <h3 class="hotel-title"><a href="#">Villas At Poco Diablo</a></h3>
+                <!-- фото гостиницы -->
+                <p class="hotel-image">
+                  <img src="img/hotel-3.jpg" width="135" height="90" alt="Фото Villas At Poco Diablo">
+                </p>
+                <!-- стоимость гостиницы -->
+                <span class="hotel-cost">От 2000 р.</span>
+                <!-- тип жилья -->
+                <span class="hotel-type">Апартаменты</span>
+                <!-- ссылка на страницу гостиницы -->
+                <a class="button button-more-info" href="#">Подробнее</a>
+                <!-- ссылка на бронь -->
+                <a class="button button-booking" href="#">Забронировать</a>
+              </div>
+              <div class="column-right">
+                <!-- количество звёзд у гостиницы -->
+                <p class="hotel-star">
+                  <img src="img/star.svg" alt="2 звезды">
+                  <img src="img/star.svg" alt="">
+                </p>
+                <!-- рейтинг гостиницы -->
+                <span class="hotel-rating">Рейтинг: 9,2</span>
+              </div>
             </article>
           </li>
         </ul>
@@ -185,19 +201,21 @@
     </main>
     <!-- подвал -->
     <footer class="main-footer">
-      <p>#visitsedona</p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <b>Website by</b>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-        </a>
+      <div class="container">
+        <p>#visitsedona</p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <b>Website by</b>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

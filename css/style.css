@@ -168,6 +168,10 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.site-navigation-current a {
+  color: #766357;
+}
+
 /* фон для приветственной части */
 
 .page-intro {
@@ -469,26 +473,63 @@ a {
 /* убираю маркеры у списка фильтров */
 
 .filter ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.inner-page h1 {
+  margin: 0;
+  padding: 0;
 }
 
 /* задаю фон для блока сортировки */
 
 .sorting {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  min-height: 86px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 72px;
+  padding-right: 72px;
+
   background-color: #ffffff;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /* задаю стили для надписи */
 
 .hotels-amount {
+  margin: 0;
+  padding: 0;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  white-space: nowrap;
+}
+
+.sorting .wrapper {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin-left: 50px;
 }
 
 /* задаю стили для заголовка */
 
 .sorting h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -497,7 +538,20 @@ a {
 /* убираю маркеры */
 
 .sorting ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.sorting .sorting-list {
+  display: flex;
+  margin-left: 35px;
+}
+
+.sorting-list li:nth-child(2),
+.sorting-list li:nth-child(3) {
+  padding-left: 30px;
 }
 
 /* задаю стили для ссылок */
@@ -525,11 +579,23 @@ a {
   border-bottom: none;
 }
 
+.sorting-position {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+.sorting-position li:last-child {
+  padding-left: 12px;
+}
+
 /* стилизуем стрелки сортировки */
 
 .arrow {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0;
+  padding: 0;
   font-size: 0;
 }
 
@@ -559,10 +625,35 @@ a {
   background-color: #ffffff;
 }
 
+.hotels-search h2 {
+  margin: 0;
+  padding: 0;
+}
+
 /* убираю маркеры у списка */
 
 .hotels-list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.hotel-item {
+  min-height: 152px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-page {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 72px;
+  margin-right: 72px;
 }
 
 /* стили для заголовка */
