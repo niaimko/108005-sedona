@@ -25,6 +25,26 @@ a {
   text-decoration: none;
 }
 
+/* добавляю стили для скрытия элементов со страницы */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* задаю стиль для кнопок */
 
 .button {
@@ -116,7 +136,8 @@ a {
 .main-header-logo {
   position: absolute;
   top: 0;
-  left: 531px; /* (1200px - 138px) / 2 = 531px */
+  left: 50%;
+  margin-left: -69px; /* 138px / 2 = 69px */
 
   width: 138px;
   height: 70px;
@@ -124,28 +145,47 @@ a {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
 
   min-height: 56px;
 
   margin: 0;
   padding: 0;
-
-  padding-left: 72px;
-  padding-right: 72px;
+  padding: 0 72px;
 
   list-style: none;
 }
 
+/* задаю всем пунктам меню ширину 240px */
+
 .site-navigation li {
-  width: 239px;
+  width: 240px;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4) {
+/* внутренним пунктам меню задаю ширину 288px */
+
+.site-navigation li:nth-child(4n-2),
+.site-navigation li:nth-child(4n-1) {
+  width: 288px;
+}
+
+/* текст в пунктах меню до логотипа выравниваю по левому краю (первые два пункта) */
+
+.site-navigation li:nth-child(4n-3),
+.site-navigation li:nth-child(4n-3) + li {
+  text-align: left;
+}
+
+/* текст в пунктах меню после логотипа выравниваю по правому краю (вторые два пункта) */
+
+.site-navigation li:nth-child(4n-1),
+.site-navigation li:nth-child(4n-1) + li {
   text-align: right;
 }
+
+/* теперь можно добавлять новые пункты меню при необходимости */
 
 /* задаю цвет ссылкам */
 
