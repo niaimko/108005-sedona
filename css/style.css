@@ -241,12 +241,12 @@ input[type="radio"].visually-hidden {
 .features-title {
   display: block;
 
-  margin: 0 auto;
+  margin: 0 312px;
   margin-bottom: 30px;
   padding: 0;
-  padding-top: 55px;
+  padding-top: 60px;
 
-  width: 440px;
+  width: 576px;
 
   text-align: center;
 
@@ -259,7 +259,10 @@ input[type="radio"].visually-hidden {
 /* задаю стили для заголовка преимуществ города */
 
 .features h2 {
-  margin-bottom: 55px;
+  margin: 0 312px;
+  margin-bottom: 50px;
+
+  width: 576px;
 
   text-align: center;
 
@@ -268,50 +271,18 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
 }
 
-.index-columns {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 0;
-  margin: 0;
-}
-
 /* убираю маркеры у списков */
 
 .features-list,
 .features-list-add {
   display: flex;
   flex-wrap: wrap;
-
-  text-align: center;
+  justify-content: flex-start;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
-}
-
-/* задаю расположение по середине */
-
-.feature-item,
-.feature-item-add {
-  text-align: center;
-}
-
-/* задаю стили для заголовков каждого преимущества */
-
-.feature-item h3 {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 21px;
-  color: #000000;
-}
-
-/* переопределяю стили для заголовков 1 и 2 преимуществ, цвет текста белый */
-
-.feature-item:first-child h3,
-.feature-item:nth-child(2) h3 {
-  color: #ffffff;
 }
 
 /* задаю фон всех нумерованных преимуществ */
@@ -326,44 +297,180 @@ input[type="radio"].visually-hidden {
 .feature-item:first-child,
 .feature-item:first-child + li {
   width: 1200px;
-}
 
-/* переопределяю фон и цвет текста для 1 и 2 преимущества */
-
-.feature-item:first-child,
-.feature-item:nth-child(2) {
   color: #ffffff;
 
   background-color: #81b3d2;
+}
+
+/* задаю стили для заголовков каждого преимущества (из нумерованного списка) */
+
+/* для всех заголовков */
+
+.feature-item h3 {
+  box-sizing: border-box;
+
+  margin: 0;
+  margin-top: 45px;
+  margin-left: 72px;
+  margin-right: 88px;
+  margin-bottom: 22px;
+  padding-left: 66px;
+  padding-right: 50px;
+
+  width: 240px;
+
+  text-align: center;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+}
+
+/* для второго и пятого преимущества */
+
+.feature-item:nth-child(2) h3,
+.feature-item:nth-child(5) h3 {
+  margin-left: 88px;
+  margin-right: 72px;
+}
+
+.feature-item:nth-child(2) h3 {
+  padding-left: 38px;
+  padding-right: 51px;
+}
+
+.feature-item:nth-child(5) h3 {
+  padding-left: 63px;
+  padding-right: 78px;
+}
+
+/* переопределяю стили для заголовков 1 и 2 преимуществ, цвет текста белый */
+
+.feature-item:first-child h3,
+.feature-item:nth-child(2) h3 {
+  color: #ffffff;
+}
+
+/* добавляю стили для номера преимуществ */
+
+.feature-item span {
+  position: relative;
+
+  display: block;
+
+  margin-bottom: 22px;
+
+  text-align: center;
+}
+
+/* добавляю стили для черточек у номера преимуществ */
+
+.feature-item span::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 175px;
+  margin-top: -1px; /* высота 2px */
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #333333;
+}
+
+.feature-item span::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  right: 175px;
+  margin-top: -1px; /* высота 2px */
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #333333;
+}
+
+.feature-item:first-child span::before,
+.feature-item:first-child span::after,
+.feature-item:first-child + li span::before,
+.feature-item:first-child + li span::after {
+  background-color: #ffffff;
+}
+
+/* добавляю стили для описания нумерованных преимуществ */
+
+.feature-item p {
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  width: 225px;
+
+  text-align: center;
 }
 
 /* задаю фон для дополнительных преимуществ */
 
 .feature-item-add {
   width: 400px;
-  min-height: 256px;
+  min-height: 330px;
 
   background-color: #ffffff;
 }
 
+/* задаю стили для заголовков дополнительных преимуществ */
+
+.feature-item-add h3 {
+  position: relative;
+
+  margin: 0;
+  margin-top: 160px;
+  margin-bottom: 24px;
+
+  text-align: center;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+}
+
 /* для каждого дополнительного преимущества задаю свою фоновую картинку */
+
+/* для всех фоновых картинок задаю одинаковые параметры расположения и режим без повторения */
+
+.feature-item-add {
+  background-position: top 60px center;
+  background-repeat: no-repeat;
+}
 
 .feature-item-add:first-child {
   background-image: url("../img/icon-1.svg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .feature-item-add:first-child + li {
   background-image: url("../img/icon-3.svg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .feature-item-add:last-child {
   background-image: url("../img/icon-2.svg");
-  background-position: top center;
-  background-repeat: no-repeat;
+}
+
+/* добавляю стили для описания дополнительных преимуществ */
+
+.feature-item-add p {
+  margin: 0 auto;
+  margin-bottom: 80px;
+
+  width: 240px;
+
+  text-align: center;
 }
 
 /* делаю две колонки для первых двух преимуществ */
@@ -371,7 +478,7 @@ input[type="radio"].visually-hidden {
 .feature-item:first-child,
 .feature-item:first-child + li {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* задаю ширину преимуществам с картинкой */
@@ -392,8 +499,16 @@ input[type="radio"].visually-hidden {
   order: -2;
 }
 
-.features-list li:last-child {
+/* указываю номер 6 у доп. преимуществ, а не last-child чтобы в будущем можно было добавить еще преимущества и не сломать нынешнюю сетку */
+
+.features-list li:nth-child(6) {
   order: -1;
+}
+
+/* ставлю сувениры в конце доп. преимуществ */
+
+.features-list-add li:last-child {
+  order: 1;
 }
 
 /* задаю фон для раздела поиска гостиниц */
