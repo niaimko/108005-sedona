@@ -82,7 +82,6 @@ input[type="radio"].visually-hidden {
 }
 
 .button-send-form {
-
   width: 458;
   padding-top: 13px;
   padding-bottom: 18px;
@@ -90,16 +89,29 @@ input[type="radio"].visually-hidden {
   padding-right: 197px;
 }
 
+.button-open-form-inner {
+  width: 133px;
+  margin-left: 95px;
+  margin-right: 95px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 34px;
+  padding-right: 32px;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 .button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
 /* кнопка показать */
-
-.button-open-form-inner {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-}
 
 .button-open-form-inner:hover,
 .button-open-form-inner:focus {
@@ -802,6 +814,18 @@ input[type="radio"].visually-hidden {
 /* меняю цвет текста в форме */
 
 .filter {
+  display: flex;
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+  min-height: 217px;
+  margin: 0;
+  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 31px;
+  padding-left: 72px;
+  padding-right: 72px;
+
   color: #ffffff;
 
   background-color: #ffffff;
@@ -813,12 +837,17 @@ input[type="radio"].visually-hidden {
 /* убираю обводку у тега fieldset */
 
 .filter fieldset {
+  width: 253px;
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 /* задаю параметры для тега legend */
 
 .filter legend {
+  margin-bottom: 25px;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -831,6 +860,174 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+}
+
+.filter-option {
+  margin-bottom: 22px;
+}
+
+.filter-option:last-child {
+  margin-bottom: 0;
+}
+
+.filter-checkbox {
+  position: relative;
+
+  padding-left: 40px;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+}
+
+.filter-checkbox input[type="checkbox"][disabled] + .checkbox-indicator {
+  background-image: url("../img/checkbox-disabled-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+}
+
+.filter-checkbox input[type="checkbox"][disabled][checked] + .checkbox-indicator {
+  width: 27px;
+
+  background-image: url("../img/checkbox-disabled-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+}
+
+.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  width: 27px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+}
+
+.filter-range {
+  width: 330px;
+  margin-left: auto;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
 }
 
 .inner-page h1 {
@@ -1042,10 +1239,6 @@ input[type="radio"].visually-hidden {
 /* задаю стили для подвала */
 
 .main-footer {
-  position: relative;
-}
-
-.main-footer {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1059,6 +1252,11 @@ input[type="radio"].visually-hidden {
   min-height: 120px;
 
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.inner-page .main-footer {
+  position: relative;
+  width: 1200px;
 }
 
 .main-footer p {
