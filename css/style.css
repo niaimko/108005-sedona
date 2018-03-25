@@ -15,8 +15,14 @@ body {
 /* контейнер-обёртка для центровки */
 
 .container {
+  position: relative;
+
   width: 1200px;
   margin: 0 auto;
+
+  box-shadow:
+    -5px 0 15px -3px rgba(0, 1, 1, 0.2),
+    5px 0 15px -3px rgba(0, 1, 1, 0.2);
 }
 
 /* убираю подчеркивание у всех ссылок на сайте */
@@ -143,7 +149,7 @@ input[type="radio"].visually-hidden {
 
 /* задаю стили для навигации по сайту */
 
-.main-header .container {
+.main-header {
   position: relative;
 }
 
@@ -240,7 +246,7 @@ input[type="radio"].visually-hidden {
 /* фон для приветственной части */
 
 .page-intro {
-  min-height: 508px;
+  height: 508px;
 
   background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
@@ -435,7 +441,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 60px;
 
-  width: 270px;
+  width: 380px;
 
   text-align: center;
 }
@@ -493,7 +499,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 80px;
 
-  width: 270px;
+  width: 380px;
 
   text-align: center;
 }
@@ -781,13 +787,9 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   width: 1200px;
+  min-height: 593px;
 
   background-color: #ffffff;
-}
-
-.maps h2 {
-  margin: 0;
-  padding: 0;
 }
 
 .maps p {
@@ -1043,7 +1045,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.main-footer .container {
+.main-footer {
   position: absolute;
   bottom: 0;
   left: 50%;
