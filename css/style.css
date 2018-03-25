@@ -25,6 +25,13 @@ a {
   text-decoration: none;
 }
 
+/* добавляю стили для всех картинок */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* добавляю стили для скрытия элементов со страницы */
 
 .visually-hidden:not(:focus):not(:active),
@@ -48,7 +55,16 @@ input[type="radio"].visually-hidden {
 /* задаю стиль для кнопок */
 
 .button {
+  display: inline-block;
+
+  width: 568px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 139px;
+  padding-right: 139px;
+
   font-size: 21px;
+  font-weight: 700;
   line-height: 26px;
   color: #ffffff;
 
@@ -57,6 +73,15 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   border: none;
+}
+
+.button-send-form {
+
+  width: 458;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  padding-left: 195px;
+  padding-right: 197px;
 }
 
 .button:active {
@@ -410,7 +435,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 60px;
 
-  width: 225px;
+  width: 270px;
 
   text-align: center;
 }
@@ -468,7 +493,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 80px;
 
-  width: 240px;
+  width: 270px;
 
   text-align: center;
 }
@@ -514,6 +539,8 @@ input[type="radio"].visually-hidden {
 /* задаю фон для раздела поиска гостиниц */
 
 .appointment {
+  position: relative;
+
   text-align: center;
 
   background-color: #ffffff;
@@ -523,8 +550,7 @@ input[type="radio"].visually-hidden {
 
 .appointment h2 {
   margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
+  margin-bottom: 25px;
   padding-top: 50px;
 
   font-size: 30px;
@@ -538,16 +564,56 @@ input[type="radio"].visually-hidden {
 /* задаю стиль для вводного текста */
 
 .appointment-info {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 
   line-height: 24px;
 
   text-align: center;
 }
 
-/* задаю стили полям ввода в форме */
+.search-form {
+  position: absolute;
+  left: 50%;
 
-.search-item input {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -284px;
+  padding: 55px;
+
+  width: 568px;
+  min-height: 395px;
+
+  background-color: #ffffff;
+}
+
+.search-item {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 458px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.search-item label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+
+  text-transform: uppercase;
+}
+
+.search-icon-date {
+  box-sizing: border-box;
+  padding: 12px;
+  padding-right: 40px;
+
+  width: 346px;
+  height: 38px;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -556,6 +622,13 @@ input[type="radio"].visually-hidden {
 
   background-color: #f2f2f2;
   border: none;
+}
+
+.calendar-button {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  margin-top: -11px;
 }
 
 .search-item input:hover {
@@ -567,14 +640,138 @@ input[type="radio"].visually-hidden {
   border: 2px solid #e5e5e5;
 }
 
-/* задаю стили надписям в форме */
+.calendar-button:hover path {
+  fill: #000000;
+}
 
-.search-item label {
+.calendar-button:active path {
+  fill: #81b3d2;
+}
+
+.search-item:nth-child(3) {
+  justify-content: flex-start;
+
+  width: 229px;
+}
+
+.search-icon-amount {
+  box-sizing: border-box;
+  width: 114px;
+  height: 38px;
+  margin-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
 
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.amount-reduce-button {
+  position: absolute;
+  top: 18px;
+  right: 92px;
+
+  width: 12px;
+  height: 3px;
+
+  font-size: 0;
+
+  background-color: #a9a9a9;
+  border: 0;
+}
+
+.amount-increase-button {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: #a9a9a9;
+  border: 0;
+}
+
+.amount-increase-button {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+
+  width: 11px;
+  height: 11px;
+
+  background-color: transparent;
+}
+
+.amount-increase-button::before,
+.amount-increase-button::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  right: 0;
+
+  width: 11px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+}
+
+.amount-increase-button::before {
+  transform: rotate(90deg);
+}
+
+.search-item:nth-child(4) {
+  justify-content: flex-end;
+
+  width: 229px;
+}
+
+.search-item:nth-child(4) label {
+  margin-right: -15px;
+}
+
+.search-item:nth-child(4) .amount-reduce-button {
+  right: 88px;
+}
+
+.search-item:nth-child(4) .amount-increase-button::before,
+.search-item:nth-child(4) .amount-increase-button::after {
+  right: -4px;
+}
+
+.amount-reduce-button:hover {
+  background-color: #000000;
+}
+
+.amount-increase-button:hover::before,
+.amount-increase-button:hover::after {
+  background-color: #000000;
+}
+
+.amount-reduce-button:active {
+  background-color: #81b3d2;
+}
+
+.amount-increase-button:active::before,
+.amount-increase-button:active::after {
+  background-color: #81b3d2;
+}
+
+.search-item:nth-child(3),
+.search-item:nth-child(4) {
+  margin-bottom: 54px;
 }
 
 /* задаю фон для карты */
@@ -842,7 +1039,17 @@ input[type="radio"].visually-hidden {
 
 /* задаю стили для подвала */
 
+.main-footer {
+  position: relative;
+}
+
 .main-footer .container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  margin-left: -600px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -870,18 +1077,75 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 150px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 48px;
+
   background-color: #81b3d2;
 }
 
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active,
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path,
+.social-button:active path {
+  fill-opacity: 0.3;
+}
+
 .footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
   width: 400px;
+  margin: 0 auto;
+  padding: 0;
 
   text-align: center;
+}
+
+.footer-copyright b {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+}
+
+.copyright-button {
+  width: 115px;
+  height: 41px;
+  margin-left: 8px;
+}
+
+.copyright-button:hover path,
+.copyright-button:focus path {
+  fill: #81b3d2;
+}
+
+.copyright-button:active path,
+.copyright-button:active path {
+  fill: #bdbbbc;
 }
