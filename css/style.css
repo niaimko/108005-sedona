@@ -476,10 +476,12 @@ input[type="radio"].visually-hidden {
 /* добавляю стили для описания нумерованных преимуществ */
 
 .feature-item p {
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0;
   margin-bottom: 60px;
+  padding: 0 55px;
 
-  width: 380px;
+  width: 400px;
 
   text-align: center;
 }
@@ -534,10 +536,12 @@ input[type="radio"].visually-hidden {
 /* добавляю стили для описания дополнительных преимуществ */
 
 .feature-item-add p {
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0;
   margin-bottom: 80px;
+  padding: 0 55px;
 
-  width: 380px;
+  width: 400px;
 
   text-align: center;
 }
@@ -833,6 +837,9 @@ input[type="radio"].visually-hidden {
 .maps p {
   margin: 0;
   padding: 0;
+
+  font-size: 0;
+  line-height: 0;
 }
 
 /* размытый фон для формы на внутренней странице */
@@ -1349,7 +1356,37 @@ input[type="radio"].visually-hidden {
 
 .hotel-star {
   margin: 0;
+  /* прижимаю к правому краю */
+  margin-left: auto;
   padding: 0;
+
+  font-size: 0;
+
+  background-image:
+    url("../img/star.svg"),
+    url("../img/star.svg"),
+    url("../img/star.svg"),
+    url("../img/star.svg"),
+    url("../img/star.svg");
+  background-repeat: no-repeat;
+  background-position:
+    right 0 top 0,
+    right 24px top 0,
+    right 48px top 0,
+    right 72px top 0,
+    right 96px top 0;
+}
+
+.two-star {
+  width: 45px;
+}
+
+.three-star {
+  width: 65px;
+}
+
+.four-star {
+  width: 90px;
 }
 
 /* задаю стили для рейтинга гостиниц */
