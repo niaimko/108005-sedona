@@ -73,7 +73,6 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
-
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -104,6 +103,7 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+
   cursor: pointer;
 }
 
@@ -206,10 +206,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -69px; /* 138px / 2 = 69px */
 
   width: 138px;
   height: 70px;
+  margin-left: -69px; /* 138px / 2 = 69px */
 }
 
 .site-navigation {
@@ -219,7 +219,6 @@ input[type="radio"].visually-hidden {
   align-items: center;
 
   min-height: 56px;
-
   margin: 0;
   padding: 0;
   padding: 0 72px;
@@ -284,7 +283,7 @@ input[type="radio"].visually-hidden {
 /* фон для приветственной части */
 
 .page-intro {
-  height: 508px;
+  min-height: 508px;
 
   background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
@@ -310,34 +309,30 @@ input[type="radio"].visually-hidden {
 .features-title {
   display: block;
 
+  width: 576px;
   margin: 0 312px;
   margin-bottom: 30px;
   padding: 0;
   padding-top: 60px;
 
-  width: 576px;
-
-  text-align: center;
-
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
   color: #000000;
 }
 
 /* задаю стили для заголовка преимуществ города */
 
 .features h2 {
+  width: 576px;
   margin: 0 312px;
   margin-bottom: 50px;
-
-  width: 576px;
-
-  text-align: center;
 
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  text-align: center;
 }
 
 /* убираю маркеры у списков */
@@ -379,6 +374,7 @@ input[type="radio"].visually-hidden {
 .feature-item h3 {
   box-sizing: border-box;
 
+  width: 240px;
   margin: 0;
   margin-top: 45px;
   margin-left: 72px;
@@ -387,13 +383,10 @@ input[type="radio"].visually-hidden {
   padding-left: 66px;
   padding-right: 50px;
 
-  width: 240px;
-
-  text-align: center;
-
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  text-align: center;
   color: #000000;
 }
 
@@ -425,9 +418,9 @@ input[type="radio"].visually-hidden {
 /* добавляю стили для номера преимуществ */
 
 .feature-item span {
-  position: relative;
-
   display: block;
+
+  position: relative;
 
   margin-bottom: 22px;
 
@@ -440,13 +433,12 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-
   top: 50%;
   left: 175px;
-  margin-top: -1px; /* высота 2px */
 
   width: 9px;
   height: 2px;
+  margin-top: -1px; /* высота 2px */
 
   background-color: #333333;
 }
@@ -455,13 +447,12 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-
   top: 50%;
   right: 175px;
-  margin-top: -1px; /* высота 2px */
 
   width: 9px;
   height: 2px;
+  margin-top: -1px; /* высота 2px */
 
   background-color: #333333;
 }
@@ -477,11 +468,10 @@ input[type="radio"].visually-hidden {
 
 .feature-item p {
   box-sizing: border-box;
+  width: 400px;
   margin: 0;
   margin-bottom: 60px;
   padding: 0 55px;
-
-  width: 400px;
 
   text-align: center;
 }
@@ -504,11 +494,10 @@ input[type="radio"].visually-hidden {
   margin-top: 160px;
   margin-bottom: 24px;
 
-  text-align: center;
-
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  text-align: center;
   color: #000000;
 }
 
@@ -537,11 +526,10 @@ input[type="radio"].visually-hidden {
 
 .feature-item-add p {
   box-sizing: border-box;
+  width: 400px;
   margin: 0;
   margin-bottom: 80px;
   padding: 0 55px;
-
-  width: 400px;
 
   text-align: center;
 }
@@ -604,9 +592,8 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  color: #000000;
-
   text-align: center;
+  color: #000000;
 }
 
 /* задаю стиль для вводного текста */
@@ -615,7 +602,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px;
 
   line-height: 24px;
-
   text-align: center;
 }
 
@@ -664,12 +650,11 @@ input[type="radio"].visually-hidden {
 /* модальное окно скрыто */
 
 .modal {
-  display: none;
-
   position: absolute;
   left: 50%;
   z-index: 4;
 
+  display: none;
   margin-left: -284px;
 }
 
@@ -689,11 +674,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-
-  padding: 55px;
-
   width: 568px;
   min-height: 395px;
+  padding: 55px;
 
   background-color: #ffffff;
 }
@@ -713,22 +696,19 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-
   text-transform: uppercase;
 }
 
 .search-icon-date {
   box-sizing: border-box;
-  padding: 12px;
-  padding-right: 40px;
-
   width: 346px;
   height: 38px;
+  padding: 12px;
+  padding-right: 40px;
 
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-
   text-transform: uppercase;
 
   background-color: #f2f2f2;
@@ -739,6 +719,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 50%;
   right: 9px;
+
   margin-top: -11px;
 }
 
@@ -779,7 +760,6 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-
   text-transform: uppercase;
 
   background-color: #f2f2f2;
@@ -887,11 +867,10 @@ input[type="radio"].visually-hidden {
 /* задаю фон для карты */
 
 .maps {
-  margin: 0;
-  padding: 0;
-
   width: 1200px;
   min-height: 593px;
+  margin: 0;
+  padding: 0;
 
   background-color: #ffffff;
 }
@@ -921,7 +900,6 @@ input[type="radio"].visually-hidden {
 .filter {
   display: flex;
   justify-content: flex-start;
-
   box-sizing: border-box;
   min-height: 217px;
   margin: 0;
@@ -945,6 +923,7 @@ input[type="radio"].visually-hidden {
   width: 253px;
   margin: 0;
   padding: 0;
+
   border: none;
 }
 
@@ -985,6 +964,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 23px;
   height: 23px;
 
@@ -1051,6 +1031,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls::after {
   content: "";
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1059,11 +1040,13 @@ input[type="radio"].visually-hidden {
   height: 22px;
 
   background: #ffffff;
+
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
+  vertical-align: center;
 
   font-size: 14px;
   line-height: 21px;
@@ -1120,6 +1103,7 @@ input[type="radio"].visually-hidden {
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
   cursor: pointer;
 }
 
@@ -1174,9 +1158,7 @@ input[type="radio"].visually-hidden {
 .sorting .wrapper {
   display: flex;
   align-items: center;
-
   width: 100%;
-
   margin-left: 50px;
 }
 
@@ -1238,7 +1220,6 @@ input[type="radio"].visually-hidden {
 .sorting-position {
   display: flex;
   justify-content: flex-end;
-
   width: 100%;
 }
 
@@ -1250,14 +1231,19 @@ input[type="radio"].visually-hidden {
 
 .arrow {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
+
   font-size: 0;
 }
 
 .arrow::before {
-  display: inline-block;
   content: "";
+
+  display: inline-block;
+  vertical-align: top;
+
   border: 10px solid #cacaca;
   border-right-width: 5px;
   border-left-width: 5px;
@@ -1313,7 +1299,6 @@ input[type="radio"].visually-hidden {
 .hotels-list {
   display: flex;
   flex-direction: column;
-
   margin: 0;
   padding: 0;
 
@@ -1329,18 +1314,16 @@ input[type="radio"].visually-hidden {
 .hotel-page {
   display: flex;
   justify-content: space-between;
-
   min-height: 93px;
-  padding-top: 27px;
-  padding-bottom: 30px;
   margin-left: 72px;
   margin-right: 72px;
+  padding-top: 27px;
+  padding-bottom: 30px;
 }
 
 .column-left {
   display: flex;
   justify-content: flex-start;
-
   width: 728px;
   margin: 0;
   padding: 0;
@@ -1349,7 +1332,6 @@ input[type="radio"].visually-hidden {
 .column-left p {
   width: 135px;
   height: 90px;
-
   margin-top: 3px;
 }
 
@@ -1365,6 +1347,7 @@ input[type="radio"].visually-hidden {
 .wrapper .hotel-cost,
 .wrapper .hotel-type {
   display: inline-block;
+  vertical-align: center;
 
   font-size: 14px;
   font-weight: 400;
@@ -1406,6 +1389,7 @@ input[type="radio"].visually-hidden {
 .hotel-title a {
   margin: 0;
   padding: 0;
+
   color: #000000;
 }
 
@@ -1465,7 +1449,6 @@ input[type="radio"].visually-hidden {
 
 .hotel-rating {
   display: block;
-
   box-sizing: border-box;
   width: 110px;
   padding-top: 3px;
@@ -1483,17 +1466,15 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   position: absolute;
-  z-index: 3;
   bottom: 0;
   left: 50%;
-
-  margin-left: -600px;
+  z-index: 3;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   min-height: 120px;
+  margin-left: -600px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -1509,9 +1490,8 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  color: #000000;
-
   text-align: center;
+  color: #000000;
 }
 
 .footer-social {
@@ -1524,7 +1504,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   width: 150px;
   margin: 0 auto;
   padding: 0;
@@ -1536,7 +1515,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 46px;
   height: 48px;
 
@@ -1563,7 +1541,6 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   width: 400px;
   margin: 0 auto;
   padding: 0;

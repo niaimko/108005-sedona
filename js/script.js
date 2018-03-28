@@ -3,7 +3,7 @@ var link = document.querySelector(".button-open-form");
 /* находим модальное окно в разметке и записываем его в переменную */
 var popup = document.querySelector(".modal-search");
 /* находим форму в разметке и записываем её в переменную */
-var form = popup.querySelector("form");
+var form = popup.querySelector(".search-form");
 /* найдем поля ввода формы */
 var arrivalDate = popup.querySelector("[name=arrival-date]");
 var departureDate = popup.querySelector("[name=departure-date]");
