@@ -1204,7 +1204,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-item {
-  min-height: 152px;
+  min-height: 150px;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1215,8 +1215,8 @@ input[type="radio"].visually-hidden {
   min-height: 93px;
   margin-left: 72px;
   margin-right: 72px;
-  padding-top: 27px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 28px;
 }
 
 .column-left {
@@ -1230,7 +1230,7 @@ input[type="radio"].visually-hidden {
 .column-left p {
   width: 135px;
   height: 90px;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .column-right {
@@ -1254,15 +1254,15 @@ input[type="radio"].visually-hidden {
 
 .hotel-type {
   width: 110px;
-  margin-right: 6px;
+  margin-right: 2px;
 }
 
 .hotel-description .wrapper {
-  margin-bottom: 9px;
+  margin-bottom: 14px;
 }
 
 .button-more-info {
-  margin-right: 6px;
+  margin-right: 2px;
 }
 
 .hotel-image {
@@ -1272,7 +1272,7 @@ input[type="radio"].visually-hidden {
 
 .hotel-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   padding: 0;
 
   font-size: 21px;
@@ -1306,28 +1306,18 @@ input[type="radio"].visually-hidden {
 
 .hotel-star {
   margin: 0;
+  margin-top: 4px;
   margin-left: auto;
   padding: 0;
 
   font-size: 0;
 
-  background-image:
-    url("../img/star.svg"),
-    url("../img/star.svg"),
-    url("../img/star.svg"),
-    url("../img/star.svg"),
-    url("../img/star.svg");
-  background-repeat: no-repeat;
-  background-position:
-    right 0 top 0,
-    right 24px top 0,
-    right 48px top 0,
-    right 72px top 0,
-    right 96px top 0;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
 }
 
 .two-star {
-  width: 45px;
+  width: 41px;
 }
 
 .three-star {
@@ -1335,7 +1325,7 @@ input[type="radio"].visually-hidden {
 }
 
 .four-star {
-  width: 90px;
+  width: 89px;
 }
 
 .hotel-rating {
