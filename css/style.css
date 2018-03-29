@@ -79,8 +79,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-open-form-inner {
-  width: 133px;
-  margin-left: 95px;
+  width: 138px;
+  margin-left: 85px;
   margin-right: 95px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -834,8 +834,12 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.filter fieldset:first-child + fieldset {
+  margin-left: 2px;
+}
+
 .filter legend {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   font-size: 16px;
   font-weight: 700;
@@ -850,7 +854,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .filter-option:last-child {
@@ -865,7 +869,7 @@ input[type="radio"].visually-hidden {
 
 .filter-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
 
   width: 23px;
@@ -908,7 +912,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-range {
-  width: 330px;
+  width: 318px;
   margin-left: auto;
 }
 
@@ -923,7 +927,7 @@ input[type="radio"].visually-hidden {
 .price-controls {
   position: relative;
 
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -960,9 +964,13 @@ input[type="radio"].visually-hidden {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  padding-left: 56px;
 }
 
 .price-controls input {
@@ -1058,9 +1066,9 @@ input[type="radio"].visually-hidden {
 
 .sorting .wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
-  margin-left: 50px;
+  margin-left: 47px;
 }
 
 .sorting h2 {
@@ -1081,12 +1089,12 @@ input[type="radio"].visually-hidden {
 
 .sorting .sorting-list {
   display: flex;
-  margin-left: 35px;
+  margin-left: 40px;
 }
 
 .sorting-list li:nth-child(2),
 .sorting-list li:nth-child(3) {
-  padding-left: 30px;
+  padding-left: 33px;
 }
 
 .sorting-list a {
@@ -1115,6 +1123,7 @@ input[type="radio"].visually-hidden {
 .sorting-position {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
 }
 
@@ -1124,7 +1133,7 @@ input[type="radio"].visually-hidden {
 
 .arrow {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
 
@@ -1135,7 +1144,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 
   border: 10px solid #cacaca;
   border-right-width: 5px;
