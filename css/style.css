@@ -1479,10 +1479,12 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   padding: 0;
 
-  font-size: 0;
-
   background-image: url("../img/star.svg");
-  background-repeat: space;
+  background-repeat: space no-repeat;
+}
+
+.hotel-star span {
+  visibility: hidden;
 }
 
 .two-star {
