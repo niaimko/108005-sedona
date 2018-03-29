@@ -524,19 +524,19 @@ input[type="radio"].visually-hidden {
 
 @keyframes bounce {
   0% {
-    transform: translateX(-2000px);
+    transform: translateY(-100px);
   }
 
-  70% {
-    transform: translateX(30px);
+  50% {
+    transform: translateY(30px);
   }
 
-  90% {
-    transform: translateX(-10px);
+  75% {
+    transform: translateY(-10px);
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
