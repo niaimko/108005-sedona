@@ -14,7 +14,6 @@
         <nav class="main-navigation">
           <a class="main-header-logo">
             <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
-            <!-- оставляем лого в png -->
           </a>
           <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
@@ -24,21 +23,14 @@
           </ul>
         </nav>
       </header>
-
       <!-- основное содержимое -->
       <main class="main-page">
-
         <!-- секция приветствия -->
         <section class="page-intro">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <!-- картинка с текстом будет в фоновом режиме, не используем текст, т.к.
-          нецелесообразно подключать доп. шрифты ради 2 строчек -->
-          <!-- предполагаю что будем использовать множественные фоны: картинка гор и сверху текст в виде картинки, а в CSS пропишем маску -->
         </section>
-
         <!-- преимущества города -->
         <section class="features">
-          <!-- краткое описание города -->
           <b class="features-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
           <h2>Рассмотрим 5 причин, по  которым Седона круче, чем гранд каньон!</h2>
           <!-- список причин -->
@@ -75,7 +67,6 @@
               <p>Большинство едет в гранд каньон и толпится там</p>
             </li>
             <li>
-              <!-- использую вложенный список чтобы добавить дополнительные преимущества -->
               <ul class="features-list-add">
                 <li class="feature-item-add">
                   <h3>Жилье</h3>
@@ -90,7 +81,6 @@
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
-              <!-- конец вложенного списка -->
           </ul>
         </section>
         <!-- секция поиска гостиниц -->
@@ -99,9 +89,7 @@
           <p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button button-open-form">Поиск гостиницы в Седоне</button>
           <div class="modal modal-search modal-show">
-            <!-- форма поиска гостиницы -->
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <!-- дата заезда -->
               <p class="search-item">
                 <label for="search-arrival-date">Дата заезда:</label>
                 <input class="search-icon-date" id="search-arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
@@ -113,7 +101,6 @@
                   </svg>
                 </a>
               </p>
-              <!-- дата выезда -->
               <p class="search-item">
                 <label for="search-departure-date">Дата выезда:</label>
                 <input class="search-icon-date" id="search-departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
@@ -125,21 +112,18 @@
                   </svg>
                 </a>
               </p>
-              <!-- количество взрослых -->
               <p class="search-item">
                 <label for="search-adult-amount">Взрослые:</label>
                 <input class="search-icon-amount" id="search-adult-amount" type="text" name="adult-amount" placeholder="2">
                 <button class="amount-reduce-button" type="button">Уменьшить количество</button>
                 <button class="amount-increase-button" type="button">Увеличить количество</button>
               </p>
-              <!-- количество детей -->
               <p class="search-item">
                 <label for="search-children-amount">Дети:</label>
                 <input class="search-icon-amount" id="search-children-amount" type="text" name="children-amount" placeholder="0">
                 <button class="amount-reduce-button" type="button">Уменьшить количество</button>
                 <button class="amount-increase-button" type="button">Увеличить количество</button>
               </p>
-              <!-- кнопка отправки формы -->
               <button class="button button-send-form" type="submit">Найти</button>
             </form>
           </div>
