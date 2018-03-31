@@ -233,6 +233,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li {
   width: 240px;
+
+  word-wrap: break-word;
 }
 
 .site-navigation li:nth-child(4n-2),
@@ -1717,9 +1719,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright b {
+  max-width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  word-wrap: break-word;
   color: #000000;
 }
 
