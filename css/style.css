@@ -75,6 +75,8 @@ input[type="radio"].visually-hidden {
   word-wrap: break-word;
 
   border: none;
+
+  cursor: pointer;
 }
 
 .button-send-form {
@@ -758,6 +760,8 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   border: 0;
+
+  cursor: pointer;
 }
 
 .search-item input:hover {
@@ -826,6 +830,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #f2f2f2;
   border: 0;
+
+  cursor: pointer;
 }
 
 .amount-reduce-button::before {
@@ -849,6 +855,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #f2f2f2;
   border: 0;
+
+  cursor: pointer;
 }
 
 .amount-increase-button::before,
