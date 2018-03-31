@@ -1157,17 +1157,20 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle:hover {
-  top: -13px;
+  top: -10px;
+
+  width: 6px;
+  height: 6px;
+
   background: #1c4f80;
-  border: 12px solid #ffffff;
 }
 
 .range-toggle-min:hover {
-  left: -4px;
+  left: -1px;
 }
 
 .range-toggle-max:hover {
-  left: 249px;
+  left: 252px;
 }
 
 .inner-page h1 {
